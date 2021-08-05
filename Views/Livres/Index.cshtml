@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ProjetBDLivres.Models.Livres>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Liste des Livres</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Ajouter un Livre</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Titre
+            </th>
+            <th>
+                Annee
+            </th>
+            <th>
+                Auteur
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.titre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.annee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.auteur)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.livreId}) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.livreId})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
