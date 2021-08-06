@@ -32,6 +32,9 @@ namespace ProjetBDLivres.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("imageName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("titre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

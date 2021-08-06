@@ -10,9 +10,10 @@ namespace ProjetBDLivres.Data
     public class LivresContext:DbContext
     {
         public LivresContext(DbContextOptions<LivresContext> options) : base(options)
-        {
-
-        }
+        {}
         public DbSet<Livres> Livres { get; set; }
+        public DbSet<LivresDesires> LivresDesires { get; set; }
+        public DbSet<Utilisateurs> Utilisateurs { get; set; }
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ProjetBDLivres\\ProjetBDLivres.csproj": {}
+    "G:\\Doro\\ProjetBDLivres\\ProjetBDLivres.csproj": {}
   },
   "projects": {
-    "F:\\ProjetBDLivres\\ProjetBDLivres.csproj": {
+    "G:\\Doro\\ProjetBDLivres\\ProjetBDLivres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ProjetBDLivres\\ProjetBDLivres.csproj",
+        "projectUniqueName": "G:\\Doro\\ProjetBDLivres\\ProjetBDLivres.csproj",
         "projectName": "ProjetBDLivres",
-        "projectPath": "F:\\ProjetBDLivres\\ProjetBDLivres.csproj",
+        "projectPath": "G:\\Doro\\ProjetBDLivres\\ProjetBDLivres.csproj",
         "packagesPath": "C:\\Users\\yvesk\\.nuget\\packages\\",
-        "outputPath": "F:\\ProjetBDLivres\\obj\\",
+        "outputPath": "G:\\Doro\\ProjetBDLivres\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages"

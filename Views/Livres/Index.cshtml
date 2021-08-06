@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Liste des Livres</h1>
+<h1>Livres Possedes</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-primary">Ajouter un Livre</a>
@@ -22,7 +22,9 @@
             <th>
                 Auteur
             </th>
-            <th></th>
+            <th>
+                Image
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -38,8 +40,12 @@
                 @Html.DisplayFor(modelItem => item.auteur)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.livreId}) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.livreId})
+                <img  src="@("~/image/"+item.imageName)" asp-append-version="true" width="150px" height="150px"/>
+            </td>
+
+            <td>
+                @Html.ActionLink("Modifier", "Edit", new { id = item.livreId }) |
+                @Html.ActionLink("Supprimer", "Delete", new { id = item.livreId })
             </td>
         </tr>
 }

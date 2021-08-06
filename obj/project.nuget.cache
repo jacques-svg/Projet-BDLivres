@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LYQaxvEV+x2BsuAyEhI7Nd231m4AXSsz32XjZpJRqoEphBtx2M2b+UKbWn1vrGpwgpYyOQF7oC/3OHOqxl2ESg==",
+  "dgSpecHash": "ht7gzwrpi9sUsHVyB63B52Wxch8X2DlZYLogTEj0Byr1lLcNsHTenLD+rMEaJSgq6atVXxnhVpIyTm0CE+2y1g==",
   "success": true,
-  "projectFilePath": "F:\\ProjetBDLivres\\ProjetBDLivres.csproj",
+  "projectFilePath": "G:\\Doro\\ProjetBDLivres\\ProjetBDLivres.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yvesk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\yvesk\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

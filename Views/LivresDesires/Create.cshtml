@@ -1,0 +1,47 @@
+﻿@model ProjetBDLivres.Models.LivresDesires
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Informations sur le Livre</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create"  enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="titre" class="control-label"></label>
+                <input asp-for="titre" class="form-control" />
+                <span asp-validation-for="titre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="annee" class="control-label"></label>
+                <input asp-for="annee" class="form-control" />
+                <span asp-validation-for="annee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="auteur" class="control-label"></label>
+                <input asp-for="auteur" class="form-control" />
+                <span asp-validation-for="auteur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Creer" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retour a la Liste</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

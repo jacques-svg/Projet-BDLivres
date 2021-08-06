@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProjetBDLivres.Models.LivresDesires>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Livres Desires</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Ajouter un Livre</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Titre
+            </th>
+            <th>
+                Annee Publication
+            </th>
+            <th>
+                Auteur
+            </th>
+            <th>
+                Image
+            </th>
+        </tr>
+
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.titre)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.annee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.auteur)
+            </td>
+            <td>
+                <img src="@("~/image/"+item.imageName)" asp-append-version="true" width="150px" height="150px" />
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Modifier</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Supprimer</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

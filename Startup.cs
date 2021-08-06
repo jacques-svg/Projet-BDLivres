@@ -55,7 +55,7 @@ namespace ProjetBDLivres
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=livres}/{action=Index}/{id?}");
             });
         }
     }
